@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "search.exclude": {
+      "**/_dev/outbox": true,
+      "**/logs": true,
+      "**/.venv": true,
+      "**/node_modules": true,
+      "**/backups": true
+    },
+    "files.exclude": {
+      "**/__pycache__": true
+    }
+  },
+  "folders": [
+    {
+      "path": "C:/Users/gomez/Documents/CV-Agent",
+      "name": "CV Agent — main code and data"
+    },
+    {
+      "path": "C:/Users/gomez/Documents/CV-Agent/cvucsedit",
+      "name": "cvucsedit"
+    },
+    {
+      "path": "C:/Users/gomez/Documents/CV-Agent/autocad-2026-mcp",
+      "name": "autocad-2026-mcp"
+    },
+    {
+      "path": "C:/Users/gomez/Documents/CV-Agent/autocad-mcp",
+      "name": "autocad-mcp"
+    },
+    {
+      "path": "C:/Users/gomez/Documents/CV-Agent/sketchup-mcp",
+      "name": "sketchup-mcp"
+    },
+    {
+      "path": "C:/Users/gomez/Documents/CV-Agent/sketchup-mcp-server",
+      "name": "sketchup-mcp-server"
+    },
+    {
+      "name": "Cabinet Vision UCS mirror (live database files)",
+      "path": "C:/Users/gomez/Cabinet Vision UCS"
+    }
+  ]
+}

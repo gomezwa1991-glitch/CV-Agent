@@ -1,0 +1,51 @@
+{
+  "sources": [
+    {
+      "id": "agent",
+      "name": "CV Agent code",
+      "path": "cvagent"
+    },
+    {
+      "id": "library",
+      "name": "Reusable UCS library",
+      "path": "library"
+    },
+    {
+      "id": "ucs-mirror",
+      "name": "Live UCS mirror (read only)",
+      "path": "C:/Users/gomez/Cabinet Vision UCS/CVData"
+    },
+    {
+      "id": "cvucsedit",
+      "name": "UCS editor",
+      "path": "cvucsedit",
+      "github": "https://github.com/SageBilt/cvucsedit"
+    },
+    {
+      "id": "autocad-2026",
+      "name": "AutoCAD 2026 MCP",
+      "path": "autocad-2026-mcp",
+      "github": "https://github.com/PabloDeCortes/autocad-2026-mcp"
+    },
+    {
+      "id": "autocad",
+      "name": "AutoCAD MCP",
+      "path": "autocad-mcp",
+      "github": "https://github.com/thewisekape/autocad-mcp"
+    },
+    {
+      "id": "sketchup",
+      "name": "SketchUp MCP",
+      "path": "sketchup-mcp",
+      "github": "https://github.com/mhyrr/sketchup-mcp"
+    },
+    {
+      "id": "sketchup-server",
+      "name": "SketchUp extension",
+      "path": "sketchup-mcp-server",
+      "github": "https://github.com/SidhNor/sketchup-mcp-server"
+    }
+  ],
+  "github_account_inventory": "Account gomezwa1991-glitch verified on 2026-10-13. Public profile shows no public repositories; connected repository listing returned zero accessible repositories. Private repositories remain unverified.",
+  "github_account": "gomezwa1991-glitch"
+}

@@ -1,0 +1,348 @@
+{
+ "phases": {
+  "A_original": {
+   "rebuild": {
+    "rebuilt": true,
+    "popups": []
+   },
+   "report_ok": false,
+   "why": "report data not refreshed within 120s",
+   "parts": 380,
+   "key_parts": [
+    {
+     "Cabinet ID": "5",
+     "Description": "Drawer Guide",
+     "Width String": "1",
+     "Length String": "21 1/2",
+     "Parameters": "!S_CL=#M0.000000|_COLOR=#L16777088|U_SPDWR=#STRASH DRAWER"
+    },
+    {
+     "Cabinet ID": "7",
+     "Description": "Drawer Guide",
+     "Width String": "1",
+     "Length String": "21 1/2",
+     "Parameters": "!S_CL=#M0.000000|_COLOR=#L16777088|U_SPDWR=#STRASH DRAWER"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    }
+   ],
+   "secs": 144
+  },
+  "B_library": {
+   "rebuild": {
+    "rebuilt": true,
+    "popups": []
+   },
+   "report_ok": false,
+   "why": "report data not refreshed within 120s",
+   "parts": 380,
+   "key_parts": [
+    {
+     "Cabinet ID": "5",
+     "Description": "Drawer Guide",
+     "Width String": "1",
+     "Length String": "21 1/2",
+     "Parameters": "!S_CL=#M0.000000|_COLOR=#L16777088|U_SPDWR=#STRASH DRAWER"
+    },
+    {
+     "Cabinet ID": "7",
+     "Description": "Drawer Guide",
+     "Width String": "1",
+     "Length String": "21 1/2",
+     "Parameters": "!S_CL=#M0.000000|_COLOR=#L16777088|U_SPDWR=#STRASH DRAWER"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    }
+   ],
+   "secs": 144
+  },
+  "C_restored": {
+   "rebuild": {
+    "rebuilt": true,
+    "popups": []
+   },
+   "report_ok": false,
+   "why": "report data not refreshed within 120s",
+   "parts": 380,
+   "key_parts": [
+    {
+     "Cabinet ID": "5",
+     "Description": "Drawer Guide",
+     "Width String": "1",
+     "Length String": "21 1/2",
+     "Parameters": "!S_CL=#M0.000000|_COLOR=#L16777088|U_SPDWR=#STRASH DRAWER"
+    },
+    {
+     "Cabinet ID": "7",
+     "Description": "Drawer Guide",
+     "Width String": "1",
+     "Length String": "21 1/2",
+     "Parameters": "!S_CL=#M0.000000|_COLOR=#L16777088|U_SPDWR=#STRASH DRAWER"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "23",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "13 1/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    },
+    {
+     "Cabinet ID": "24",
+     "Description": "Wing",
+     "Width String": "3 3/4",
+     "Length String": "19 3/4",
+     "Parameters": "_SHPDX=#M3.750000|_SHPDY=#M21.500000|_EDG1CONN=#L17|_EDG3CONN=#L17"
+    }
+   ],
+   "secs": 144
+  }
+ },
+ "backup": {
+  "folder": "C:\\Users\\gomez\\Documents\\CV-Agent\\backups\\ucs-20261013-010217-before-live-library-test",
+  "count": 23,
+  "database_backup": null
+ },
+ "A_vs_B": {
+  "only_first": [],
+  "only_second": []
+ },
+ "A_vs_C_disabled61": {
+  "note": "61 is off in C, so KP rows should be gone",
+  "only_first": [],
+  "only_second": []
+ }
+}

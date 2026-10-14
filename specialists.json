@@ -1,0 +1,23 @@
+{
+  "model": "cv-agent",
+  "endpoint": "http://127.0.0.1:1234/api/v1/chat",
+  "reasoning": "off",
+  "max_output_tokens": 3200,
+  "roles": {
+    "ucs": {
+      "name": "UCS Author",
+      "purpose": "Create reviewable UCS drafts for an explicit CV version and dialect, with metadata, references and a test plan.",
+      "contract": "Return only a JSON object with name (simple filename), code (string), settings (object), expected_tests (array of strings), explanation (string), missing_information (array of strings). If missing essential information, set code to an empty string. Use only supported Cabinet Vision UCS APIs evidenced in supplied sources. UCS:JS must start with a // comment and must not use Node.js, browser APIs, external network, SQL or eval. Never treat JavaScript as UCS:M. State catalog dependencies and material/part names that require checking. No automatic import or enabling."
+    },
+    "drafter": {
+      "name": "Drawing Drafter",
+      "purpose": "Plan drawing annotations, scene references, layers and sheet organization from explicit requirements.",
+      "contract": "Return only a JSON object with explanation (string), documented_features (array), proposed_workflow (array), missing_information (array), and annotation_plan (object or null). annotation_plan may contain name, units mm/in, radius, text_height and marks [{label,sheet,x,y}] ONLY when the user explicitly supplies every coordinate, unit, label and sheet. Never infer drawing scale or coordinates from a screenshot. Separate documented CV behavior from external DXF proposals. Do not invent scene APIs or propose editing undocumented binary database structures."
+    },
+    "cleanup": {
+      "name": "Drawing Cleanup Reviewer",
+      "purpose": "Review drawing issues and propose conservative cleanup on isolated copies.",
+      "contract": "Return only a JSON object with explanation (string), inspection_checks (array), proposed_changes (array), preservation_checks (array), and missing_information (array). Never claim a drawing was inspected without supplied inspection results. Preserve units, Z geometry, layers, paper space, blocks, colors, linetypes, metadata, dimensions and references. Never propose OVERKILL or PURGE on production drawings. No machining approval."
+    }
+  }
+}

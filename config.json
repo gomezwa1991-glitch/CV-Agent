@@ -1,0 +1,6 @@
+{
+  "model": "cv-agent",
+  "lmstudio_url": "http://localhost:1234/v1",
+  "max_steps": 40,
+  "local_reference_toolkit": "C:\\Users\\gomez\\Documents\\Codex\\2026-10-13\\referenced-chatgpt-conversation-this-is-an\\outputs\\CV-Local-Upgrade"
+}
