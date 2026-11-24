@@ -1,10 +1,11 @@
 # CV Agent
 
-## Default workflow, updated 2026-10-13
-Use the sandbox specialist workflows in SPECIALISTS.md for UCS creation, drafting and cleanup.
-Keep target CV version and UCS language explicit. Save new drafts and review packages before proposing installation.
-This setup request does not authorize live SQL, UCS imports/enabling, live mirror saves, production drawing edits,
-licensing changes or CNC operations. Legacy tools below remain available for separately approved live work.
+## Default workflow, updated 2026-11-24
+Follow RULES.md and the SOP in sop\ for the task: 1 UCS, 2 punch list with CV fixes, 3 room drafting, 4 drawings and
+CAD notes. Drafts can start from the specialist roles in SPECIALISTS.md. Keep target CV version and UCS language explicit.
+A task from Guillermo that asks for one of these approves the live steps it needs (UCS install and test in the UCS Test
+Bench, edits in sandbox job copies), after a backup. Licensing, customer jobs or OneDrive files, production drawings,
+CNC operations and catalog-wide settings still need his explicit OK. Stop wherever RULES.md says to stop.
 Use current role-data references before historic broad-index examples. Toe Kick Wings has two failing offline
 equivalence checks (built Y=2.5 versus baseline Y=3.25); do not use it as a verified template until reviewed.
 
@@ -106,7 +107,7 @@ which report 4 (Drawer and Rollout List) uses to move it into "Specialty Drawers
 - oversize-panels-*, oversize-toe-kicks-*, oversize-crown-* are DRAFTS (unfinished). Don't install them as they are.
 - Read library\README.md first. Write-up of the review: knowledge\ucs-library.md.
 
-## Legacy live workflow: only after explicit approval to install and test
+## Live UCS workflow: when the task asks for a tested UCS (full steps in sop\ucs.md)
 1. Restate the goal in one line: trigger part, Type (Modify/Add), Macro Type, what parts change, expected result.
 2. search_cv_docs and verified_ucs: find the closest working example and read it fully.
 3. Write the code. Start with a comment header: name and UCS settings (Macro Type, Type, Part, Pre-Build).

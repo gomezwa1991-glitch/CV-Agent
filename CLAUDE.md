@@ -1,5 +1,8 @@
 # CLAUDE.md
 
+## This repo: Guillermo's Cabinet Vision agent
+Read RULES.md first. It covers the four jobs (UCS, punch list with CV fixes, room drafting, drawings with CAD notes), when to stop and wait for Guillermo, and the safety and testing rules. The steps for each job are in sop\. The guidelines below are how to work.
+
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
