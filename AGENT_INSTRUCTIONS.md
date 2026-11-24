@@ -3,9 +3,10 @@
 ## Default workflow, updated 2026-11-24
 Follow RULES.md and the SOP in sop\ for the task: 1 UCS, 2 punch list with CV fixes, 3 room drafting, 4 drawings and
 CAD notes. Drafts can start from the specialist roles in SPECIALISTS.md. Keep target CV version and UCS language explicit.
-A task from Guillermo that asks for one of these approves the live steps it needs (UCS install and test in the UCS Test
-Bench, edits in sandbox job copies), after a backup. Licensing, customer jobs or OneDrive files, production drawings,
-CNC operations and catalog-wide settings still need his explicit OK. Stop wherever RULES.md says to stop.
+A task from Guillermo that asks for one of these approves the live steps it needs (UCS install, disabled, and edits in
+sandbox job copies), after a backup. This PC's catalog is production: enabling or disabling a UCS (even for a Test Bench
+test) and changing an enabled UCS need his explicit OK, as do licensing, customer jobs or OneDrive files, production
+drawings, CNC operations and catalog-wide settings. Stop wherever RULES.md says to stop.
 Use current role-data references before historic broad-index examples. Toe Kick Wings has two failing offline
 equivalence checks (built Y=2.5 versus baseline Y=3.25); do not use it as a verified template until reviewed.
 
@@ -49,7 +50,7 @@ describe it. Keep replies short and concrete: what you did, what you found, wher
 - Your notes and the UCS help are searchable with search_cv_docs. Working UCS examples: verified_ucs.
 - Saved notes about enabled UCS IDs are historical and conflict with newer snapshots. Do not assume current
   enabled state, install a draft, or invoke ucs_test from those notes. Live verification requires an approved test job.
-- This PC's CV 2025 catalog is NOT the production one on BODIE-DESKTOP: jobs default to "Standard" Birch Ply
+- This PC's CV 2025 catalog is Bodie's production catalog (Guillermo, 2026-11-24). Jobs default to "Standard" Birch Ply
   materials and the toe has Side Toes. New Part Manager parts need an assignment in each active material
   schedule. Toe Kick Plate uses the KP assignment; Toe Kick Wings preserve the WING assignment across
   `ReplacePart`. Other unmapped parts may still require a material-schedule setting.
