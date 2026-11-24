@@ -2,47 +2,59 @@
 
 Goal: Guillermo opens a job where every wall and cabinet is in place, numbered, named and sized, with the standard door/drawer layout. He only does the hard elevations, then approves. After that, SOP 4 makes the drawings.
 
-The click-by-click how-tos and CV quirks are in claude/cv-room-drafting-process.md. Read it before driving CV, and add new quirks to it.
+Run straight through to step 7, then stop. Click-by-click how-tos and CV quirks are in claude/cv-room-drafting-process.md. Read it before driving CV, and add new quirks to it.
 
 ## Inputs
 - Company, job, room(s).
-- Shop drawing PDF (plan, elevations, sections) or architectural drawings.
+- Shop drawing PDF (plan, elevations, sections) or architectural drawings. A DXF of the plan if there is one.
 - New job, or rooms added to a job Guillermo started?
 
 ## 1. Takeoff (before touching CV)
-From the drawing, build one table per room and post it in the chat:
+Build one table per room and post it in the chat:
 
 | Wall | # (drawing tag) | Name | CV catalog item | W | H | D | Elev | From left | Standard face layout | Hard? |
 |---|---|---|---|---|---|---|---|---|---|---|
 
+- Read numbers from the PDF's vector data when it has any (PyMuPDF: dimension text and line coordinates). They're exact; reading by eye isn't. A DXF dropped on the CV plan is a visual check; its lines couldn't be selected in the 10/24 run.
 - "Standard face layout" = doors, drawers and shelves that CV's normal section tools can build (e.g. "3 drawer 7 / 11 9/16 / 11 9/16", "pair door, 2 adj shelves").
 - "Hard?" = Y for anything Guillermo finishes himself, with the reason: angled shelves, custom sections, crown, specialty parts.
+- Wall data per room: lengths, height, soffit, openings (windows, doors).
 - List every conflict in the drawing (e.g. a section says 20" box, the plan measures 18") and the value used. Where the drawing is silent, use the company standard (Bodie: reference/bodie-cv-check-context.md section 8) and say so.
-- Wall data per room: lengths, height, soffit, openings.
+- Numbers: use the drawing's cabinet tags. Bodie engine sets carry no tags until CV numbers exist, so number by wall order (wall 1 left to right, then wall 2...) and put that mapping in the takeoff.
 
 ## 2. Job
 - New job: create it in CV-Agent\sandbox\ as "<job> - <room> - DRAFT.cvj".
 - His started job: Save As a copy into sandbox\ first, unless he says to work in the original.
 
-## 3. Walls
-Walls F2 > Chained Line. Set Height and Soffit first. Type decimals. +Y is down, and the room side is on the right of travel.
+## 3. Start the room
+**a. Order import (preferred; Guillermo has used it).** Write the takeoff as an ORDX (or ORD) file and import it with Room level > Utilities > Import Order.
+- Use an ORDX exported by CV from a Bodie room as the pattern, so catalog and item names match the shop's catalog. Import only into the sandbox job.
+- Spec: CV help "ORD File Format" (Order Entry v4). It has [Header], [Catalog] and [Cabinet] sections, plus Walls, Windows, Doors and Appliances sections in the extended format. For ORDX, third-party notes (unconfirmed) say it's XML with several rooms per file and cabinets placed by wall, offset along the wall and elevation. The exported sample is the real reference.
+- On the first run, record in cv-room-drafting-process.md which fields came through (walls, positions, numbers, Comment) and the export menu path.
 
-## 4. Cabinets
-- Place each catalog item from the takeoff (drag, then click on the wall). Size and position from the sidebar: Width first, then re-check every field (the edit right after a Width change is ignored). Set Elevation after Height. Position with Center Position > From Left.
-- **Number:** Properties > Number = drawing tag, Lock Number = Yes. If the drawing has no tags, number by wall order (wall 1 left to right, then wall 2...) and put that mapping in the takeoff.
-- **Name:** the drawing's cabinet name in the cabinet's name/description field. Record which CV field holds it in cv-room-drafting-process.md on the first run.
+**b. Through the screens (fallback, or for what the import didn't set).**
+- Walls: Walls F2 > Chained Line. Set Height and Soffit first. Type decimals. +Y is down, and the room side is on the right of travel (draw clockwise so the wall thickness falls outside the room).
+- Cabinets: in the Elevation view, drag the catalog item, release, click once to drop, Esc. Size and position from the sidebar: Width first, then re-check every field (the edit right after a Width change is ignored). Set Elevation after Height. Position with Center Position > From Left.
+
+## 4. Number, name and face layout
+- **Number:** Properties > Number = the takeoff number, Lock Number = Yes.
+- **Name:** the drawing's cabinet name in the cabinet's **Comment** field (Guillermo, 11/24/26).
 - **Standard face layout:** Section > Section Face for doors and drawers, Section Interior for shelves (Adjustable Shelves + Nominal Spacing).
-- Skip the "Hard?" items.
+- Place and size every box, even when its inside is a hard elevation. Leave only the hard parts themselves (angled shelves, custom sections, crown, specialty parts).
 
 ## 5. Verify
-- Open Reports and read the cabinet list from the report DB (check [Job Info].[Job Name] first). Every cabinet must match the takeoff: number, name, W, H, D.
-- Check elevation positions in the Elevation tab against the drawing elevations.
+- Open the Reports tab, check [Job Info].[Job Name], then read the cabinets:
+  `SELECT [Room ID],[Wall ID],[Cabinet ID],[Comment],[Cabinet Name],[Width String],[Height String],[Depth String],[Elevation String] FROM Cabinets ORDER BY [Room ID],[Wall ID],[Cabinet ID]` (cv25_query, database "report").
+- Every cabinet must match the takeoff: number ([Cabinet ID]; confirm on the first run that it's the CV number), name ([Comment]), W, H, D, Elevation.
+- Position along the wall isn't in the report DB. Check it in the Elevation tab against the drawing elevations.
 - Fix and re-check until everything matches. Up to 5 rounds per cabinet, then flag it.
 
-## 6. Hand over, then STOP
-- Save the job. Write the handoff: what was drafted, the hard elevation list (cabinet, what's left, drawing page), the conflicts and the values used.
+## 6. Save
+Save the job.
+
+## 7. Hand over, then STOP
+- Write the handoff: what was drafted, the hard elevation list (cabinet, what's left, drawing page), the conflicts and the values used.
 - Guillermo finishes the hard elevations and approves the rooms. Only then go to SOP 4.
 
-## Open
-- Every field is typed through the UI, so this is slow. A faster import path (cabinet list or XML import) has not been checked yet.
-- Cabinet Tech: commercial catalog and AWI standards. Write its defaults here when that work starts.
+## Cabinet Tech (later)
+Commercial catalog and AWI standards. Write its defaults here when that work starts.

@@ -6,8 +6,9 @@ Use `SPECIALISTS.md` and `specialists.json` for the UCS Author, Drawing Drafter 
 The default specialist route uses one local model request with no execution tools or cloud fallback.
 
 A task from Guillermo that asks for a tested UCS, CV fixes, room drafting or drawings approves the live CV steps it needs
-(UCS install and test in the UCS Test Bench, edits in sandbox job copies), after a backup. Never infer permission to
-change licensing, customer jobs or OneDrive files, production drawings, CNC files or catalog-wide settings.
+(UCS install, disabled, and edits in sandbox job copies), after a backup. The CV 2025 catalog is production: never
+infer permission to enable, disable or change an enabled UCS, or to change licensing, customer jobs or OneDrive files,
+production drawings, CNC files or catalog-wide settings.
 Some subfolders are live database mirrors even though they appear to contain code. Read their own instructions.
 Generated UCS must identify target CV version and dialect, include validation and a test plan, and pass in the UCS Test
 Bench before being called verified (`sop/ucs.md`). Untested work stays a DRAFT.
