@@ -34,7 +34,7 @@ Goal: Guillermo describes what he wants in words. The agent delivers a UCS that 
 - Back up the UCS library first.
 - Install routes:
   - **Claude:** a Python script dropped in CV-Agent\_dev\inbox. The first line is `# timeout: N`. It runs in the agent's .venv and uses `cvagent.db.ucs_backup(label)`, `ucs_get(id)` and `ucs_update(id, code=...)`. ucs_update also rewrites CV's compiled copy (Temp\UCSJS\fn<Name>.js); without that, CV's "Scripts modified externally" prompt can restore the old code. The log lands in _dev\outbox. If the CV-Agent folder isn't connected to the chat, request it (device_request_folder_access for C:\Users\gomez\Documents\CV-Agent). If nothing comes back, the helper isn't running: ask Guillermo to double-click _dev\start-build-helper.cmd.
-  - **Local agent:** ucs_backup, then ucs_write or ucs_new_from.
+  - **Local agent:** ucs_backup, then ucs_write or ucs_new_from. Run it with only the UCS tools: `.venv\Scripts\python.exe agent.py --profile ucs-build "<task>"` (or `--file <task.md>`).
   - **By hand:** CV's UCS Manager with computer use.
 - New UCS: clone a row with the same Type and Macro Type (the local agent's ucs_new_from does this), write the code, and leave it disabled.
 - CV then asks "Scripts modified externally": answer Yes. "Select UCS to Save" needs an OK click.
