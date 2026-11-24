@@ -16,7 +16,8 @@ Each test has a known answer, so pass or fail is objective. Run a test the first
 - Pass: at least 45 of 50 found, every HOLD card found and marked HOLD, and every extra card is a real finding Guillermo agrees with.
 
 **2b. Fix and verify.** In a sandbox copy of UCS Test Bench, pick three cabinets in one room (A, B, C). Note their sizes, then change A's width and B's height by a known amount. Write two exact-target cards ("Mo: make A <original> wide", "Mo: make B <original> tall") and one question card ("Mo: confirm C depth or match A").
-- Pass: both exact cards are fixed and checked in the report DB Cabinets table, the question card is listed for Guillermo and not touched, and the notes say what changed.
+- Run it through the punch folder (punchlists\test-bench\TASK.md + punchlist.json, then `Start Punch List.cmd`), so the local agent and Claude's re-check are both tested.
+- Pass: both exact cards come back DONE and are verified in the report DB Cabinets table, the question card was put to Guillermo instead of the agent, C didn't change, and the results files say what changed.
 
 ## Test 3: Room drafting (SOP 3)
 Re-draft the Monterey Circle Entertainment Room (shop drawing 10.10.26, sheets B.41-B.47) in a new sandbox job, using the ORDX import first.
@@ -26,7 +27,7 @@ Re-draft the Monterey Circle Entertainment Room (shop drawing 10.10.26, sheets B
 
 ## Test 4: Drawings and CAD notes (SOP 4)
 On the room from Test 3:
-- Part A pass: every sheet's SHEET # reads DP-n, plan scenes say PLAN and elevations ELEVATION, every scale is a standard one, and the sheets are saved in the job.
+- Part A pass: every sheet's SHEET # reads DP-n, every scene carries the right SCENE LABLE symbol (PLAN / ELEVATION / 3D RENDER), scenes are at 1/2" = 1' (or a listed smaller standard scale), and the sheets are saved in the job.
 - Part B pass: the elevation's CAD notes from the 11/10 run (including ADJUST. HEIGHT SHELVING, BACK PANEL, CORK BOARD 40 13/16"(W) x 41"(H), 3/4" APPLIED MOLDING, 1-1/4" FRAME, FIXED HEIGHT SHELF) are on the sheet, point at the right parts and print at 1/8".
 
 ## Results
