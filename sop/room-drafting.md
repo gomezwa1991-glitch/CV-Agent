@@ -19,8 +19,8 @@ Build one table per room and post it in the chat:
 - "Standard face layout" = doors, drawers and shelves that CV's normal section tools can build (e.g. "3 drawer 7 / 11 9/16 / 11 9/16", "pair door, 2 adj shelves").
 - "Hard?" = Y for anything Guillermo finishes himself, with the reason: angled shelves, custom sections, crown, specialty parts.
 - Wall data per room: lengths, height, soffit, openings (windows, doors).
-- List every conflict in the drawing (e.g. a section says 20" box, the plan measures 18") and the value used. Where the drawing is silent, use the company standard (Bodie: reference/bodie-cv-check-context.md section 8) and say so.
-- Numbers: use the drawing's cabinet tags. Bodie engine sets carry no tags until CV numbers exist, so number by wall order (wall 1 left to right, then wall 2...) and put that mapping in the takeoff.
+- List every conflict in the drawing (e.g. a section says 20" box, the plan measures 18") and the value used. Where the drawing is silent, use the company's standards from claude/company-profiles/<company>.md (Bodie: reference/bodie-cv-check-context.md section 8) and say so. If the profile is silent too, ask.
+- Numbers: use the drawing's cabinet tags, or the numbering rule in the company profile. Bodie engine sets carry no tags until CV numbers exist, so number by wall order (wall 1 left to right, then wall 2...) and put that mapping in the takeoff.
 
 ## 2. Job
 - New job: create it in CV-Agent\sandbox\ as "<job> - <room> - DRAFT.cvj".
@@ -38,7 +38,7 @@ Build one table per room and post it in the chat:
 
 ## 4. Number, name and face layout
 - **Number:** Properties > Number = the takeoff number, Lock Number = Yes.
-- **Name:** the drawing's cabinet name in the cabinet's **Comment** field (Guillermo, 11/24/26).
+- **Name:** the drawing's cabinet name in the cabinet's **Comment** field (Guillermo, 11/24/26, for Bodie; other companies per their profile).
 - **Standard face layout:** Section > Section Face for doors and drawers, Section Interior for shelves (Adjustable Shelves + Nominal Spacing).
 - Place and size every box, even when its inside is a hard elevation. Leave only the hard parts themselves (angled shelves, custom sections, crown, specialty parts).
 
@@ -56,5 +56,5 @@ Save the job.
 - Write the handoff: what was drafted, the hard elevation list (cabinet, what's left, drawing page), the conflicts and the values used.
 - Guillermo finishes the hard elevations and approves the rooms. Only then go to SOP 4.
 
-## Cabinet Tech (later)
-Commercial catalog and AWI standards. Write its defaults here when that work starts.
+## Other companies
+Everything company-specific (PC, CV version, catalog, standards, numbering, sandbox) is in claude/company-profiles/<company>.md. Cabinet Tech: claude/company-profiles/cabinet-tech.md (CV 2026, Claude app on d-6qm2n34).

@@ -25,6 +25,13 @@ Re-draft the Monterey Circle Entertainment Room (shop drawing 10.10.26, sheets B
 - Pass: the Cabinets query matches every W, H, D and Elevation to 1/16". Every position along the wall checks out in the Elevation tab. Numbers are locked and names are in Comment. The standard face layouts are built (3 drawers at 14 1/8", stacked 24" x 55 1/4" doors, shelf counts per the drawing). The hard-elevation list names what's left (counter, cork board frames, back panels, valance and rail, crown, furniture kick).
 - Also record which fields the ORDX import set by itself.
 
+### Test 3 for another company (e.g. Cabinet Tech)
+The released job is the answer key, so no hand-built table is needed.
+1. Copy the company's released test job into its sandbox folder (claude/company-profiles/<company>.md). Open the copy and read its cabinet list for the test room with the Cabinets query in SOP 3, step 5. Save it as the answer key (wall, number, name, W, H, D, Elevation), and note each cabinet's position along the wall from the Elevation tab.
+2. Close it. In a new sandbox job, draft the same room from the drawings only, following SOP 3 with the company's standards from its profile. Don't look at the answer key while drafting.
+3. Pass: every cabinet in the answer key is there with the same W, H, D and Elevation (to 1/16") and the same position along the wall; numbers and names follow the profile; the hard-elevation list covers what was left. Each difference is either the agent's error (fail) or a change made after the drawings were issued (explain it; Guillermo decides).
+4. Record which fields the ORDX import set by itself, and the result in the profile's Readiness table.
+
 ## Test 4: Drawings and CAD notes (SOP 4)
 On the room from Test 3:
 - Part A pass: every sheet's SHEET # reads DP-n, every scene carries the right SCENE LABLE symbol (PLAN / ELEVATION / 3D RENDER), scenes are at 1/2" = 1' (or a listed smaller standard scale), and the sheets are saved in the job.
